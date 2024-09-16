@@ -19,3 +19,35 @@ Before starting, ensure you have the following installed on your machine:
 git clone https://github.com/wahyunandanovan/svelte-fullstack-auth-user.git
 cd svelte-fullstack-auth-user
 
+### 2. Install Dependencies
+
+```bash
+npm install
+
+### 3. Configure Environment Variables
+Create a .env file in the root of the project and add the following environment variables:
+
+```bash
+DATABASE_URL="mysql://username:password@localhost:3306/database_name"
+
+### 4. Set Up MySQL Database
+
+```bash
+CREATE DATABASE database_name;
+
+### 5. Prisma Configuration
+
+Generate the Prisma client by running:
+```bash
+npx prisma generate;
+
+To create the initial migration and sync Prisma with your database:
+```bash
+npx prisma migrate dev --name init;
+
+### 6. Run the Development Server
+
+```bash
+npm run dev;
+
+
