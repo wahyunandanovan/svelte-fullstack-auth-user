@@ -57,3 +57,7 @@ npx prisma migrate dev --name init
 npm run dev
 ```
 
+## Preview
+
+![Login](./screenshoots/login.png)
+![Users](./screenshoots/user.png)
